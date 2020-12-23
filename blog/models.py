@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 
 class Post(models.Model):
+	'''Model for home page content'''
 	title = models.CharField(max_length=100)
 	content = models.TextField()
 	date_posted = models.DateTimeField(default=timezone.now)

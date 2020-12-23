@@ -10,6 +10,8 @@ from django.views.generic import (
 	)
 from . models import Post
 def home(request):
+	'''Handles Traffic of the home page of the blog by 
+	taking request argument and returning what they want them to see when they are sent to this url'''
 	context = {
 	'posts':Post.objects.all()
 	}
